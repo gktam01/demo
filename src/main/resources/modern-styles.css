@@ -1,0 +1,272 @@
+/* Modern Cashflow App Styles */
+
+/* Root styling */
+.root {
+    -fx-font-family: "Segoe UI", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-smoothing-type: gray;
+}
+
+/* Scrollbar styling */
+.scroll-bar:horizontal,
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-border-color: transparent;
+    -fx-background-radius: 10px;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(139, 92, 246, 0.5);
+    -fx-background-radius: 10px;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgba(139, 92, 246, 0.8);
+}
+
+/* Button styles */
+.button {
+    -fx-cursor: hand;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-font-weight: 500;
+    -fx-padding: 10 20 10 20;
+}
+
+.button:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* ComboBox styles */
+.combo-box {
+    -fx-background-color: #1e2749;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #6b7280;
+    -fx-border-color: transparent;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #1e2749;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #1e2749;
+    -fx-background-radius: 10px;
+    -fx-padding: 5;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: rgba(139, 92, 246, 0.2);
+}
+
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: #8b5cf6;
+}
+
+/* TextField styles */
+.text-field {
+    -fx-background-color: #1e2749;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #6b7280;
+    -fx-background-radius: 10px;
+    -fx-border-color: transparent;
+    -fx-padding: 10 15 10 15;
+}
+
+.text-field:focused {
+    -fx-border-color: #8b5cf6;
+    -fx-border-width: 2;
+}
+
+/* TextArea styles */
+.text-area {
+    -fx-background-color: #1e2749;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #6b7280;
+    -fx-background-radius: 10px;
+    -fx-border-color: transparent;
+    -fx-control-inner-background: #1e2749;
+}
+
+.text-area .content {
+    -fx-background-color: #1e2749;
+    -fx-background-radius: 10px;
+}
+
+/* DatePicker styles */
+.date-picker {
+    -fx-background-color: #1e2749;
+    -fx-background-radius: 10px;
+    -fx-border-color: transparent;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup {
+    -fx-background-color: #1e2749;
+    -fx-border-color: rgba(139, 92, 246, 0.3);
+    -fx-border-radius: 10px;
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #151937;
+}
+
+.date-picker-popup .day-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: rgba(139, 92, 246, 0.3);
+}
+
+.date-picker-popup .day-cell:selected {
+    -fx-background-color: #8b5cf6;
+}
+
+/* Chart styles */
+.chart {
+    -fx-legend-visible: false;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgba(255, 255, 255, 0.05);
+}
+
+.axis {
+    -fx-tick-label-fill: #6b7280;
+    -fx-tick-label-font-size: 10px;
+}
+
+.chart-area-symbol {
+    -fx-background-color: transparent;
+}
+
+.chart-series-area-line {
+    -fx-stroke-width: 3px;
+}
+
+.chart-series-area-fill {
+    -fx-fill: linear-gradient(to bottom, rgba(139, 92, 246, 0.5), transparent);
+}
+
+/* Bar chart styles */
+.chart-bar {
+    -fx-background-radius: 4 4 0 0;
+    -fx-background-insets: 0;
+}
+
+/* ProgressBar styles */
+.progress-bar {
+    -fx-background-radius: 3px;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar .track {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 3px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #8b5cf6;
+    -fx-background-radius: 3px;
+    -fx-padding: 3px;
+}
+
+/* Tooltip styles */
+.tooltip {
+    -fx-background-color: #1e2749;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-padding: 8 12 8 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3);
+    -fx-font-size: 12px;
+}
+
+/* Alert dialog styles */
+.dialog-pane {
+    -fx-background-color: #1e2749;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #151937;
+}
+
+.dialog-pane .content {
+    -fx-background-color: #1e2749;
+    -fx-text-fill: white;
+}
+
+.dialog-pane .button-bar {
+    -fx-background-color: #1e2749;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #8b5cf6;
+    -fx-text-fill: white;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #7c3aed;
+}
+
+/* Custom animations */
+@keyframes pulse {
+    0% { -fx-scale-x: 1; -fx-scale-y: 1; }
+    50% { -fx-scale-x: 1.05; -fx-scale-y: 1.05; }
+    100% { -fx-scale-x: 1; -fx-scale-y: 1; }
+}
+
+@keyframes slideIn {
+    from { -fx-translate-x: -100%; }
+    to { -fx-translate-x: 0; }
+}
+
+@keyframes fadeIn {
+    from { -fx-opacity: 0; }
+    to { -fx-opacity: 1; }
+}
+
+/* Gradient backgrounds */
+.gradient-purple-pink {
+    -fx-background-color: linear-gradient(to right, #8b5cf6, #ec4899);
+}
+
+.gradient-blue-cyan {
+    -fx-background-color: linear-gradient(to right, #3b82f6, #06b6d4);
+}
+
+.gradient-green-emerald {
+    -fx-background-color: linear-gradient(to right, #10b981, #34d399);
+}
+
+/* Card hover effects */
+.card-hover {
+    -fx-cursor: hand;
+    -fx-background-color: #1e2749;
+    -fx-background-radius: 20px;
+}
+
+.card-hover:hover {
+    -fx-background-color: #252d51;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+} 

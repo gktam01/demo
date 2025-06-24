@@ -1,0 +1,150 @@
+/* Main background */
+.root {
+    -fx-background-color: #1a1a2e;
+}
+
+/* Sidebar styling */
+.sidebar {
+    -fx-background-color: #16213e;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+/* Card styling */
+.card {
+    -fx-background-color: #16213e;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 2);
+}
+
+.gradient-card {
+    -fx-background-color: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(102, 126, 234, 0.3), 15, 0, 0, 5);
+}
+
+/* Text styling */
+.title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.subtitle {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.body-text {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.secondary-text {
+    -fx-text-fill: #8892b0;
+    -fx-font-size: 12px;
+}
+
+/* Menu item styling */
+.menu-item {
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.menu-item:hover {
+    -fx-background-color: rgba(78, 205, 196, 0.1);
+}
+
+.menu-item-active {
+    -fx-background-color: #4ECDC4;
+}
+
+/* Chart styling */
+.chart {
+    -fx-background-color: transparent;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-series-line {
+    -fx-stroke: #4ECDC4;
+    -fx-stroke-width: 3px;
+}
+
+.chart-line-symbol {
+    -fx-background-color: #4ECDC4;
+    -fx-background-radius: 5px;
+}
+
+/* Pie chart colors */
+.data0.chart-pie { -fx-pie-color: #4ECDC4; }
+.data1.chart-pie { -fx-pie-color: #A8E6CF; }
+.data2.chart-pie { -fx-pie-color: #88D8C0; }
+
+/* Bar chart colors */
+.series0.chart-bar { -fx-bar-fill: #4ECDC4; }
+.series1.chart-bar { -fx-bar-fill: #FF6B6B; }
+
+/* Transaction item styling */
+.transaction-item {
+    -fx-background-color: transparent;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.transaction-item:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4ECDC4;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(78, 205, 196, 0.3), 10, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #45B7B8;
+}
+
+/* Scrollbar styling */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #4ECDC4;
+    -fx-background-radius: 5px;
+}
+
+/* Animation classes */
+.fade-in {
+    -fx-opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { -fx-opacity: 0; }
+    to { -fx-opacity: 1; }
+}
+
+.slide-in {
+    -fx-translate-y: 20;
+    -fx-opacity: 0;
+} 
